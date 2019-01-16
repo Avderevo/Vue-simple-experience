@@ -1,0 +1,41 @@
+{
+  "articles":[
+  {
+    "id": 1,
+    "title": "Some quick example text",
+    "img_url": "img-4",
+    "date": "22.12.1234",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A consectetur dicta doloremqdoloribus exercitationem fuga ill",
+    "text": " Lorem ipsum dolor sit amet, consectetur adipisicing elit. A consectetur dicta doloremqu doloribus exercitationem fuga illo illu"
+
+  },
+  {
+    "id": 2,
+    "title": "Some quick example text",
+    "img_url": "img-5",
+    "date": "22.12.1234",
+    "description": " Lorem ipsum dolor sit amet, consectetur adipisicing elit. A consectetur dicta doloremque",
+    "text": " Lorem ipsum dolor sit amet, consectetur adipisicing elit. A consectetur dicta doloremque doloribus exercitationem fuga illo"
+
+  },
+    {
+      "id": 3,
+      "title": "Some quick example text",
+      "img_url": "img-5",
+      "date": "22.12.1234",
+      "description": " Lorem ipsum dolor sit amet, consectetur adipisicing elit. A consectetur dicta doloremque",
+      "text": " Lorem ipsum dolor sit amet, consectetur adipisicing elit. A consectetur dicta doloremque doloribus exercitationem fuga illo"
+
+    },
+    {
+      "id": 4,
+      "title": "Some quick example text",
+      "img_url": "img-5",
+      "date": "22.12.1234",
+      "description": " Lorem ipsum dolor sit amet, consectetur adipisicing elit. A consectetur dicta doloremque",
+      "text": " Lorem ipsum dolor sit amet, consectetur adipisicing elit. A consectetur dicta doloremque doloribus exercitationem fuga illo"
+
+    }
+  ]
+}
+
