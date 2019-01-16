@@ -5,7 +5,7 @@
     "title": "Some quick example text",
     "img_url": "img-4",
     "date": "22.12.1234",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A consectetur dicta doloremqdoloribus exercitationem fuga ill",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A consectetur dicta doloremqdoloribus exercitationem fuga ill Lorem ipsum dolor sit amet, consectetur adipisicins exercitationem fuga ",
     "text": " Lorem ipsum dolor sit amet, consectetur adipisicing elit. A consectetur dicta doloremqu doloribus exercitationem fuga illo illu"
 
   },
@@ -14,25 +14,25 @@
     "title": "Some quick example text",
     "img_url": "img-5",
     "date": "22.12.1234",
-    "description": " Lorem ipsum dolor sit amet, consectetur adipisicing elit. A consectetur dicta doloremque",
+    "description": " Lorem ipsum dolor sit amet, consectetur adipisicing elit. A consectetur dicta doloremque Lorem ipsum dolor sit amet, consectetur adipisicing elit. A consectetur dicta doloremqu doloribus",
     "text": " Lorem ipsum dolor sit amet, consectetur adipisicing elit. A consectetur dicta doloremque doloribus exercitationem fuga illo"
 
   },
     {
       "id": 3,
       "title": "Some quick example text",
-      "img_url": "img-5",
+      "img_url": "img-8",
       "date": "22.12.1234",
-      "description": " Lorem ipsum dolor sit amet, consectetur adipisicing elit. A consectetur dicta doloremque",
+      "description": " Lorem ipsum dolor sit amet, consectetur adipisicing elit. A consectetur dicta doloremque Lorem ipsum dolor sit amet, consectetur adipisicing elit. A consectetur",
       "text": " Lorem ipsum dolor sit amet, consectetur adipisicing elit. A consectetur dicta doloremque doloribus exercitationem fuga illo"
 
     },
     {
       "id": 4,
       "title": "Some quick example text",
-      "img_url": "img-5",
+      "img_url": "img-9",
       "date": "22.12.1234",
-      "description": " Lorem ipsum dolor sit amet, consectetur adipisicing elit. A consectetur dicta doloremque",
+      "description": " Lorem ipsum dolor sit amet, consectetur adipisicing elit. A consectetur dicta doloremque Lorem ipsum dolor sit amet, consectetur adipisicing elit. A consectetur dicta doloremqu doloribus exercitationem fuga illo illu",
       "text": " Lorem ipsum dolor sit amet, consectetur adipisicing elit. A consectetur dicta doloremque doloribus exercitationem fuga illo"
 
     }

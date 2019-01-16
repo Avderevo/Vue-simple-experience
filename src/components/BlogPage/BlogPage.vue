@@ -4,7 +4,7 @@
   <Header></Header>
   <Menu></Menu>
   <div>
-    <BlogContent v-bind:art="{blog:article}"></BlogContent>
+    <BlogContent v-bind:art="{blog: now}"></BlogContent>
   </div>
   <Footer></Footer>
 </div>
@@ -38,7 +38,7 @@ export default {
     getArticle () {
       this.error = null
       this.loading = true
-      const url = `http://localhost:8000/study/article/${this.$route.params.blogId}/`
+      const url = 'static/article.json'
       const requestOptions = {
         method: 'GET'
       }
@@ -47,6 +47,12 @@ export default {
         .then(data => (this.article = data))
         .then(this.loading = false)
         .catch(error => (this.error = error))
+    }
+  },
+  computed: {
+    now: function () {
+      const id = this.$route.params.blogId
+      return this.article[id]
     }
   }
 }

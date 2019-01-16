@@ -5,7 +5,9 @@
         {{art.blog.title}}
       </div>
       <div class="story-body mb-4">
-        {{art.blog.text}}
+        <span v-for="n in 20"  :key="n">
+          {{art.blog.text}}
+        </span>
       </div>
       <div v-if="art.blog.img_url">
         <img class="card-img img-fluid" :src="require(`../../../img/${art.blog.img_url}.jpg`)"/>

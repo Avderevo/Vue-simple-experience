@@ -3,55 +3,51 @@
       <div class="news-title text-center">
         News:
       </div>
-      <div class="list-news">
-        <div class="mb-3">
-          <b-link class="news-link" href="#foo">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.<span class="news-link-arrow">&#8658;</span>
-          </b-link>
+      <span v-for="article in blog.articles" :key="article.id">
+        <div class="list-news">
+          <div class="mb-3">
+            <b-link class="news-link" :to="{name: 'BlogPage', params:{blogId: article.id}}">
+                {{article.description}}<span class="news-link-arrow"> &#8658;</span>
+            </b-link>
+          </div>
+          <hr>
         </div>
-        <hr>
-      </div>
-      <div class="list-news">
-        <div class="mb-3">
-          <b-link class="news-link" href="#foo">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit
-            eos mollitia, perspicit veniam. A architecto
-            deserunt, eius eos excepturi fugiat libe,
-            officia. Lorem ipsum dolor sit amet, consecte.<span class="news-link-arrow">&#8658;</span>
-          </b-link>
-        </div>
-        <hr>
-      </div>
-      <div class="list-news">
-        <div class="mb-3">
-          <b-link class="news-link" href="#foo">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.<span class="news-link-arrow">&#8658;</span>
-          </b-link>
-        </div>
-        <hr>
-      </div>
-      <div class="list-news">
-        <div class="mb-3">
-          <b-link class="news-link" href="#foo">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.<span class="news-link-arrow">&#8658;</span>
-          </b-link>
-        </div>
-        <hr>
-      </div>
-      <div class="list-news">
-        <div class="mb-3">
-          <b-link class="news-link" href="#foo">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.<span class="news-link-arrow">&#8658;</span>
-          </b-link>
-        </div>
-        <hr>
-      </div>
+      </span>
     </div>
 </template>
 
 <script>
 export default {
-  name: 'NewsList'
+  name: 'NewsList',
+  data () {
+    return {
+      loading: false,
+      blog: [],
+      error: null
+    }
+  },
+  mounted () {
+    this.getArticles()
+  },
+  watch: {
+    // call again the method if the route changes
+    '$route': 'NewsList'
+  },
+  methods: {
+    getArticles () {
+      this.error = this.blog = null
+      this.loading = true
+      const url = 'static/articles.json'
+      const requestOptions = {
+        method: 'GET'
+      }
+      return fetch(url, requestOptions)
+        .then(response => response.json())
+        .then(data => (this.blog = data))
+        .then(this.loading = false)
+        .catch(error => (this.error = error))
+    }
+  }
 }
 </script>
 

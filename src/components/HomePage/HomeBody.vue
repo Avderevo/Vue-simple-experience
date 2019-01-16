@@ -3,10 +3,9 @@
     <b-container class="bv-example-row mb-5">
       <b-row>
         <b-col md="9"  sm="12">
-           <span v-for="b in blog" :key="b.id">
+           <span v-for="b in blog.articles" :key="b.id">
               <BlogCard v-bind:article="{data:b}"></BlogCard>
            </span>
-          {{blog}}
           <div class="mt-5">
             <b-pagination align="center" size="sm" :total-rows="5"  :per-page="2"></b-pagination>
           </div>
@@ -46,7 +45,7 @@ export default {
     getArticles () {
       this.error = this.blog = null
       this.loading = true
-      const url = 'http://localhost:8080/articles.json'
+      const url = 'static/articles.json'
       const requestOptions = {
         method: 'GET'
       }
